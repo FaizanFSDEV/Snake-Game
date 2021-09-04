@@ -1,0 +1,31 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.body{
+  background: url('./img/bg.jpg');
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-board{
+  background: linear-gradient(rgb(161, 206, 161),rgb(228, 228, 176));
+  width: 70vmin;
+  height: 70vmin;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(21, 1fr);
+  grid-template-columns: repeat(21, 1fr);
+}
+
+.snake{
+  background-color: red;
+}
+
+.food{
+  background-color: blue;
+}
